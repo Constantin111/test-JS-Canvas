@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Myriad Pro; /* Имя шрифта */
+    src: url(../fonts/8143.otf); /* Путь к файлу со шрифтом */
+   }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Myriad Pro";
+    font-size: 42px;
+}
+header, main, footer {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.logo-title {
+    position: relative;
+    width: 100%;
+    max-width: 595px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+}
+.logo-title img {
+    width: 100%;
+    height: auto;
+}
+.logo-title .logo-name {
+    position: absolute;
+    bottom: 47px;
+    left: 40px;
+	font-size: 42px;
+    letter-spacing: 0px;
+    color: rgb(255,255,255);
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    text-align: center;
+}
+.square {
+	position: relative;
+    width: 100%;
+    max-width: 595px;
+    margin: 0 auto;
+}
+.square table {
+	width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.square table tr {
+	
+}
+.square table tr td {
+	width: 100px;
+    height: 100px;
+    max-height: 100px;
+    background: #7CC6B4;
+}
+.time-info,.block-button {
+	width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.time-info {
+    height: 166px;
+    
+}
+.time-info .time {
+    display: block;
+    padding-top: 33px;
+    text-align: center;
+}
+.time-info .timer {
+    display: block;
+    text-align: center;
+}
+#to-tearn,#resultat {
+    display: block;
+    width: 100%;
+    max-width: 404px;
+    height: 114px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 42px;
+    background: rgb(232, 232, 232);
+    margin-bottom: 34px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.square table tr td.black {
+    background: #000;
+}
+#to-tearn {
+    position: relative;
+}
+#tearn-left,#tearn-right {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 202px;
+    height: 114px;
+    top: 0px;
+    line-height: 117px;
+    vertical-align: middle;
+}
+#tearn-left {
+    margin-right: -4px;
+    text-align: left;
+}
+#tearn-right {
+    left: 202px;
+    text-align: right;
+}
+#canvas {
+    width: 400px;
+    height: 410px;
+    margin: 10px auto;
+    display: block;
+}
+.row {
+    background: rgb(232, 232, 232);
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 100px;
+}
+.row p {
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 42px;
+}
+
