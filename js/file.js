@@ -51,7 +51,6 @@ function reloadTimer() {
 
  start();
 }
-//colorTd.onclick = start();
 
 
 // таймер   ////////
@@ -124,6 +123,8 @@ totearnright.onmousedown = function () {
 
 var piksel = document.getElementById('piksel');
 var timeRes = document.getElementById('time-res');
+var piksel = document.getElementById('piksel');
+
 
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
@@ -131,15 +132,17 @@ var ctx = canvas.getContext('2d');
 
 
 result.onclick = function canvasRect() {
+    var rectBlack = document.getElementsByClassName('black');
     interval = clearInterval(interval);
     timeVal = document.getElementById('timer').innerHTML;
     timeRes.innerHTML = timeVal;
+    piksel.innerHTML = rectBlack.length;
     let rot = getDegreeElementById(squarel);
-    canvas.style.WebkitTransform = "rotate("+rot+"deg) scale(0.5)"; 
+    canvas.style.WebkitTransform = "rotate("+rot+"deg) scale(0.8)";
    // Code for IE9
-  canvas.style.msTransform = "rotate("+rot+"deg) scale(0.5)"; 
+  canvas.style.msTransform = "rotate("+rot+"deg) scale(0.8)";
     // Standard syntax
-  canvas.style.transform = "rotate("+rot+"deg) scale(0.5)";
+  canvas.style.transform = "rotate("+rot+"deg) scale(0.8)";
     for (var i = 0; i < colorTd.length; i++) {
         x = colorTd[i].offsetLeft;
         y = colorTd[i].offsetTop;
@@ -160,45 +163,6 @@ result.onclick = function canvasRect() {
 //    rot++;
 //}
 
-//totearn.onclick = function () {
-//    // Code for Safari
-//    square.style.WebkitTransform = "rotate("+rot+"deg)"; 
-//    // Code for IE9
-//    square.style.msTransform = "rotate("+rot+"deg)"; 
-//    // Standard syntax
-//    square.style.transform = "rotate("+rot+"deg)"; 
-//    rot++;
-//}
-
-//totearn.onmousedown = function rotate() {
-//while (totearn.onmousedown = true) {
-//  // Code for Safari
-//    square.style.WebkitTransform = "rotate("+rot+"deg)"; 
-//    // Code for IE9
-//    square.style.msTransform = "rotate("+rot+"deg)"; 
-//    // Standard syntax
-//    square.style.transform = "rotate("+rot+"deg)"; 
-//    rot++;
-//    setInterval(rotate(), 10);
-//}
-//    
-//    }
-
-//var time = document.getElementById("timer");
-//var timerse = new Date();
-//var timerm = timerse.setMinutes(1);
-//var timers = timerse.setSeconds(1);
-//    timerm = timerse.getMinutes();
-//    timers = timerse.getSeconds();
-//    timerm=((timerm < 10) ? "0" : "") + timerm;
-//    timers =((timers < 10) ? "0" : "") + timers;
-//
-//function timerClock(){               
-//        time.innerHTML = timerm + " : " + timers;
-//        timerClock();
-//      }
-
-//setInterval(timerClock,1000);
 
 
 
